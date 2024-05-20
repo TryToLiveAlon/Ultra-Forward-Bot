@@ -122,7 +122,7 @@ async def pub_(bot, message):
             temp.IS_FRWD_CHAT.remove(sts.TO)
             return await stop(client, user)
         temp.IS_FRWD_CHAT.remove(sts.TO)
-        await send(client, user, "🎉 Forwarding Completed")
+        await send(client, user, "<b>🎉 ғᴏʀᴡᴀᴅɪɴɢ ᴄᴏᴍᴘʟᴇᴛᴇᴅ 🥀 <a href=https://t.me/TryToLiveAlon>SUPPORT</a>🥀</b>")
         await edit(m, 'Completed', "completed", sts) 
         await stop(client, user)
             
@@ -166,17 +166,17 @@ async def forward(bot, msg, m, sts, protect):
      await forward(bot, msg, m, sts, protect)
 
 PROGRESS = """
-📈 Percetage : {0} %
+📈 ᴘᴇʀᴄᴇɴᴛᴀɢᴇ: {0} %
 
-♻️ Fetched : {1}
+♻️ ғᴇᴄʜᴇᴅ: {1}
 
-🔥 Forwarded : {2}
+♻️ ғᴏᴡᴀʀᴅᴇᴅ: {2}
 
-🫠 Remaining : {3}
+♻️ ʀᴇᴍᴀɪɴɪɴɢ: {3}
 
-📊 Status : {4}
+♻️ ꜱᴛᴀᴛᴀᴜꜱ: {4}
 
-⏳️ ETA : {5}
+⏳️ ᴇᴛᴀ: {5}
 """
 
 async def msg_edit(msg, text, button=None, wait=None):
@@ -210,8 +210,8 @@ async def edit(msg, title, status, sts):
    text = TEXT.format(i.fetched, i.total_files, i.duplicate, i.deleted, i.skip, status, percentage, estimated_total_time, progress)
    if status in ["cancelled", "completed"]:
       button.append(
-         [InlineKeyboardButton('📢 Updates', url='https://t.me/Madflix_Bots'),
-         InlineKeyboardButton('💬 Support', url='https://t.me/MadflixBots_Support')]
+         [InlineKeyboardButton('💝 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💝', url='https://t.me/deathchatting_world'),
+         InlineKeyboardButton('💠 ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 💠', url='https://t.me/deathking_botworld')]
          )
    else:
       button.append([InlineKeyboardButton('✖️ Cancel ✖️', 'terminate_frwd')])
