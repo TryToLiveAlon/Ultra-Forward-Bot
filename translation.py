@@ -11,35 +11,33 @@ import os
 from config import Config
 
 class Translation(object):
-  START_TXT = """Hey {}
+  START_TXT = """<b>ʜᴇʟʟᴏ {}</b>
 
-➻ I Am A Advanced Auto Forward Bot
-  
-➻ I Can Forward All Message From One Channel To Another Channel 
-  
-➻ Click Help Button To Know More About Me
-  
-<b>Bot Is Made By @Madflix_Bots</b>"""
+<i>ɪ'ᴍ ᴀ <b>ᴘᴏᴡᴇʀғᴜʟʟ</b> ᴀᴜᴛᴏ ғᴏʀᴡᴀʀᴅ ʙᴏᴛ
+
+ɪ ᴄᴀɴ ғᴏʀᴡᴀʀᴅ ᴀʟʟ ᴍᴇssᴀɢᴇ ғʀᴏᴍ ᴏɴᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴀɴᴏᴛʜᴇʀ ᴄʜᴀɴɴᴇʟ</i> <b>➜ ᴡɪᴛʜ ᴍᴏʀᴇ ғᴇᴀᴛᴜʀᴇs.
+ᴄʟɪᴄᴋ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ</b>
+"""
 
 
-  HELP_TXT = """<b><u>🛠️ Help</b></u>
+  HELP_TXT = """<b><u>🔆 HELP</b></u>
 
-<b><u>📚 Available Commands :</u></b>
-⏣ __/start - Check I'm Alive__ 
-⏣ __/forward - Forward Messages__
-⏣ __/unequify - Delete Duplicate Messages In Channels__
-⏣ __/settings - Configure Your Settings__
-⏣ __/reset - Reset Your Settings__
+<u>**📚 Available commands:**</u>
+<b>⏣ __/start - check I'm alive__ 
+⏣ __/forward - forward messages__
+⏣ __/unequify - delete duplicate messages in channels__
+⏣ __/settings - configure your settings__
+⏣ __/reset - reset your settings__</b>
 
-<b><u>💢 Features :</b></u>
-► __Forward Message From Public Channel To Your Channel Without Admin Permission. If The Channel Is Private Need Admin Permission__
-► __Forward Message From Private Channel To Your Channel By Using Userbot(User Must Be Member In There)__
-► __Custom Caption__
-► __Custom Button__
-► __Support Restricted Chats__
-► __Skip Duplicate Messages__
-► __Filter Type Of Messages__
-► __Skip Messages Based On Extensions & Keywords & Size__
+<b><u>💢 Features:</b></u>
+<b>► __Forward message from public channel to your channel without admin permission. if the channel is private need admin permission__
+► __Forward message from private channel to your channel by using userbot(user must be member in there)__
+► __custom caption__
+► __custom button__
+► __support restricted chats__
+► __skip duplicate messages__
+► __filter type of messages__
+► __skip messages based on extensions & keywords & size__</b>
 """
   
   HOW_USE_TXT = """<b><u>⚠️ Before Forwarding :</b></u>
@@ -50,30 +48,33 @@ class Translation(object):
 ► __If The **From Channel** Is Private Your Userbot Must Be Member In There Or Your Bot Must Need Admin Permission In There Also__
 ► __Then Use /forward To Forward Messages__"""
   
-  ABOUT_TXT = """<b>🤖 My Name :</b> {}
-<b>📝 Language :</b> <a href='https://python.org'>Python 3</a>
-<b>📚 Library :</b> <a href='https://pyrogram.org'>Pyrogram 2.0</a>
-<b>🚀 Server :</b> <a href='https://heroku.com'>Heroku</a>
-<b>📢 Channel :</b> <a href='https://t.me/Madflix_Bots'>Madflix Botz</a>
-<b>🧑‍💻 Developer :</b> <a href='https://t.me/CallAdminRobot'>Jishu Developer</a>
-
-<b>♻️ Bot Made By :</b> @Madflix_Bots"""
+  ABOUT_TXT = """<b>╔════❰ ғᴏʀᴡᴀʀᴅ ʙᴏᴛ ❱═❍⊱❁۪۪
+║╭━━━━━━━━━━━━━━━➣
+║┣⪼📃ʙᴏᴛ : ғᴏʀᴡᴀʀᴅ ʙᴏᴛ
+║┣⪼👦ᴄʀᴇᴀᴛᴏʀ : ᴍᴅᴀᴅᴍɪɴ
+║┣⪼📡ʜᴏsᴛᴇᴅ ᴏɴ : ʜᴇʀᴏᴋᴜ
+║┣⪼🗣️ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ3
+║┣⪼📚ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ ᴀsʏɴᴄɪᴏ 2.0.0 
+║┣⪼🗒️ᴠᴇʀsɪᴏɴ : 1.0.6
+║╰━━━━━━━━━━━━━━━➣
+╚══════════════════❍⊱❁۪۪</b>"""
   
-  STATUS_TXT = """<b><u>Bot Status</u></b>
-  
-<b>👱 Total Users :</b> <code>{}</code>
-
-<b>🤖 Total Bots :</b> <code>{}</code>
-
-<b>🔃 Forwardings :</b> <code>{}</code>
+  STATUS_TXT = """<b>╭──────❪ ʙᴏᴛ sᴛᴀᴛᴜs ❫─────⍟
+│
+├👨 ᴜsᴇʀs  : {}
+│
+├🤖 ʙᴏᴛs : {}
+│
+├📣 ᴄʜᴀɴɴᴇʟ  : {} 
+╰───────────────────⍟</b>
 """
   
-  FROM_MSG = "<b><u>Set Source Chat</></>\n\nForward The Last Message Or Last Message Link Of Source Chat.\n/cancel - To Cancel This Process"
-  TO_MSG = "<b><u>Choose Target Chat</u></b>\n\nChoose Your Target Chat From The Given Buttons.\n/cancel - To Cancel This Process"
-  SKIP_MSG = "<b><u>Set Message Skiping Number</u></b>\n\nSkip The Message As Much As You Enter The Number And The Rest Of The Message Will Be Forwarded\nDefault Skip Number = <code>0</code>\n<code>eg: You Enter 0 = 0 Message Skiped\nYou Enter 5 = 5 Message Skiped</code>\n/cancel - To Cancel This Process"
-  CANCEL = "Process Cancelled Succefully !"
-  BOT_DETAILS = "<b><u>📄 Bot Details</u></b>\n\n<b>➣ Name :</b> <code>{}</code>\n<b>➣ Bot ID :</b> <code>{}</code>\n<b>➣ Username :</b> @{}"
-  USER_DETAILS = "<b><u>📄 UserBot Details</u></b>\n\n<b>➣ Name :</b> <code>{}</code>\n<b>➣ User ID :</b> <code>{}</code>\n<b>➣ Username :</b> @{}"  
+  FROM_MSG = "<b>❪ SET SOURCE CHAT ❫\n\nForward the last message or last message link of source chat.\n/cancel - cancel this process</b>"
+  TO_MSG = "<b>❪ CHOOSE TARGET CHAT ❫\n\nChoose your target chat from the given buttons.\n/cancel - Cancel this process</b>"
+  SKIP_MSG = "<b>❪ SET MESSAGE SKIPING NUMBER ❫</b>\n\n<b>Skip the message as much as you enter the number and the rest of the message will be forwarded\nDefault Skip Number =</b> <code>0</code>\n<code>eg: You enter 0 = 0 message skiped\n You enter 5 = 5 message skiped</code>\n/cancel <b>- cancel this process</b>"
+  CANCEL = "<b>Process Cancelled Succefully !</b>"
+  BOT_DETAILS = "<b><u>📄 BOT DETAILS</b></u>\n\n<b>➣ NAME:</b> <code>{}</code>\n<b>➣ BOT ID:</b> <code>{}</code>\n<b>➣ USERNAME:</b> @{}"
+  USER_DETAILS = "<b><u>📄 USERBOT DETAILS</b></u>\n\n<b>➣ NAME:</b> <code>{}</code>\n<b>➣ USER ID:</b> <code>{}</code>\n<b>➣ USERNAME:</b> @{}"
          
   TEXT = """<b><u>Forward Status</u></b>
   
@@ -96,47 +97,46 @@ class Translation(object):
 {}
 """
 
-  TEXT1 = """<b><u>Forwarded Status</u></b>
+  TEXT1 = """<b><u>╔════❰ ғᴏʀᴡᴀʀᴅ sᴛᴀᴛᴜs  ❱═❍⊱❁۪۪</u></b>
+<b>║╭━━━━━━━━━━━━━━━➣</b>
+<b>║┣⪼𖨠 ғᴇᴄʜᴇᴅ ᴍᴇssᴀɢᴇs:</b> <code>{}</code>
+<b>║┃</b>
+<b>║┣⪼𖨠 ʀᴇᴍᴀɪɴɪɴɢ ᴍᴇssᴀɢᴇs:</b> <code>{}</code>
+<b>║┃</b>
+<b>║┣⪼𖨠 sᴜᴄᴄᴇғᴜʟʟʏ ғᴏʀᴡᴀʀᴅᴇᴅ:</b> <code>{}</code>
+<b>║┃</b>
+<b>║┣⪼𖨠 ᴅᴜᴘʟɪᴄᴀᴛᴇ ᴍᴇssᴀɢᴇs:</b> <code>{}</code>
+<b>║┃</b>
+<b>║┣⪼𖨠 sᴋɪᴘᴘᴇᴅ ᴍᴇssᴀɢᴇs:</b> <code>{}</code>
+<b>║┃</b>
+<b>║┃⪼𖨠 ᴄᴜʀʀᴇɴᴛ sᴛᴀᴛᴜs:</b> <code>{}</code>
+<b>║┃</b>
+<b>║┣⪼𖨠 ᴘᴇʀᴄᴇɴᴛᴀɢᴇ:</b> <code>{}</code>
+<b>║┃</b>
+<b>║┣⪼𖨠ᴇᴛᴀ:</b> <code>{}</code>
+<b>║╰━━━━━━━━━━━━━━━➣ 
+╚════❰ {} ❱══❍⊱❁۪۪</b>"""
 
-<b>🕵 Fetched Message :</b> <code>{}</code>
-
-<b>✅ Successfully Forward :</b> <code>{}</code>
-
-<b>👥 Dublicate Message :</b> <code>{}</code>
-
-<b>🗑 Deleted Message :</b> <code>{}</code>
-
-<b>🪆 Skipped :</b> <code>{}</code>
-
-<b>📊 Stats :</b> <code>{}</code>
-
-<b>⏳ Progress :</b> <code>{}</code>
-
-<b>⏰ ETA :</b> <code>{}</code>
-
-{}"""
-
-  DUPLICATE_TEXT = """<b><u>Unequify Status</u></b>
-
-<b>🕵 Fetched Files :</b> <code>{}</code>
-
-<b>👥 Dublicate Deleted :</b> <code>{}</code>
-
-{}
+  DUPLICATE_TEXT = """╔════❰ ᴜɴᴇǫᴜɪғʏ sᴛᴀᴛᴜs ❱═❍⊱❁۪۪
+║╭━━━━━━━━━━━━━━━➣
+║┣⪼ <b>ғᴇᴛᴄʜᴇᴅ ғɪʟᴇs:</b> <code>{}</code>
+║┃
+║┣⪼ <b>ᴅᴜᴘʟɪᴄᴀᴛᴇ ᴅᴇʟᴇᴛᴇᴅ:</b> <code>{}</code> 
+║╰━━━━━━━━━━━━━━━➣
+╚════❰ {} ❱══❍⊱❁۪۪
 """
-  DOUBLE_CHECK = """<b><u>Double Checking</u></b>
-  
-Before Forwarding The Messages Click The Yes Button Only After Checking The Following
+  DOUBLE_CHECK = """<b><u>DOUBLE CHECKING ⚠️</b></u>
+<code>Before forwarding the messages Click the Yes button only after checking the following</code>
 
-<b>★ Your Bot :</b> [{botname}](t.me/{botuname})
-<b>★ From Channel :</b> <code>{from_chat}<>
-<b>★ To Channel :</b> <code>{to_chat}</code>
-<b>★ Skip Messages :</b> <code>{skip}</code>
+<b>★ YOUR BOT:</b> [{botname}](t.me/{botuname})
+<b>★ FROM CHANNEL:</b> `{from_chat}`
+<b>★ TO CHANNEL:</b> `{to_chat}`
+<b>★ SKIP MESSAGES:</b> `{skip}`
 
-<i>° [{botname}](t.me/{botuname}) Must Be Admin In <b>Target Chat</b></i> (<code>{to_chat}</code>)
-<i>° If The <b>Source Chat</b> Is Private Your Userbot Must Be Member Or Your Bot Must Be Admin In There Also</i>
+<i>° [{botname}](t.me/{botuname}) must be admin in **TARGET CHAT**</i> (`{to_chat}`)
+<i>° If the **SOURCE CHAT** is private your userbot must be member or your bot must be admin in there also</b></i>
 
-<b>If The Above Is Checked Then The Yes Button Can Be Clicked</b>"""
+<b>If the above is checked then the yes button can be clicked</b>"""
 
 
 
