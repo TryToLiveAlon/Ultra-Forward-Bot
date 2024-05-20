@@ -79,28 +79,28 @@ class Translation(object):
   BOT_DETAILS = "<b><u>📄 BOT DETAILS</b></u>\n\n<b>➣ NAME:</b> <code>{}</code>\n<b>➣ BOT ID:</b> <code>{}</code>\n<b>➣ USERNAME:</b> @{}"
   USER_DETAILS = "<b><u>📄 USERBOT DETAILS</b></u>\n\n<b>➣ NAME:</b> <code>{}</code>\n<b>➣ USER ID:</b> <code>{}</code>\n<b>➣ USERNAME:</b> @{}"
          
-  TEXT = """<b><u>Forward Status</u></b>
-  
-<b>🕵 Fetch Message :</b> <code>{}</code>
-
-<b>✅ Successfully Forward :</b> <code>{}</code>
-
-<b>👥 Dublicate Message :</b> <code>{}</code>
-
-<b>🗑 Deleted Message :</b> <code>{}</code>
-
-<b>🪆 Skipped Message :</b> <code>{}</code>
-
-<b>🔁 Filtered Message :</b> <code>{}</code>
-
-<b>📊 Current Status :</b> <code>{}</code>
-
-<b>🔥 Percentage :</b> <code>{}</code> %
-
-{}
+  TEXT = """<b>╔════❰ ғᴏʀᴡᴀʀᴅ sᴛᴀᴛᴜs  ❱═❍⊱❁۪۪</b>
+<b>║╭━━━━━━━━━━━━━━━➣</b>
+<b>║┣⪼𖨠 ғᴇᴄʜᴇᴅ ᴍᴇssᴀɢᴇs:</b> <code>{}</code>
+<b>║┃</b>
+<b>║┣⪼𖨠 ʀᴇᴍᴀɪɴɪɴɢ ᴍᴇssᴀɢᴇs:</b> <code>{}</code>
+<b>║┃</b>
+<b>║┣⪼𖨠 sᴜᴄᴄᴇғᴜʟʟʏ ғᴏʀᴡᴀʀᴅᴇᴅ:</b> <code>{}</code>
+<b>║┃</b>
+<b>║┣⪼𖨠 ᴅᴜᴘʟɪᴄᴀᴛᴇ ᴍᴇssᴀɢᴇs:</b> <code>{}</code>
+<b>║┃</b>
+<b>║┣⪼𖨠 sᴋɪᴘᴘᴇᴅ ᴍᴇssᴀɢᴇs:</b> <code>{}</code>
+<b>║┃</b>
+<b>║┃⪼𖨠 ᴄᴜʀʀᴇɴᴛ sᴛᴀᴛᴜs:</b> <code>{}</code>
+<b>║┃</b>
+<b>║┣⪼𖨠 ᴘᴇʀᴄᴇɴᴛᴀɢᴇ:</b> <code>{}</code> %
+<b>║┃</b>
+<b>║┣⪼𖨠ᴇᴛᴀ:</b> <code>{}</code>
+<b>║╰━━━━━━━━━━━━━━━➣ 
+╚════❰ {} ❱══❍⊱❁۪۪</b>
 """
 
-  TEXT1 = """<b><u>╔════❰ ғᴏʀᴡᴀʀᴅ sᴛᴀᴛᴜs  ❱═❍⊱❁۪۪</u></b>
+  TEXT1 = """<b>╔════❰ ғᴏʀᴡᴀʀᴅ sᴛᴀᴛᴜs  ❱═❍⊱❁۪۪</b>
 <b>║╭━━━━━━━━━━━━━━━➣</b>
 <b>║┣⪼𖨠 ғᴇᴄʜᴇᴅ ᴍᴇssᴀɢᴇs:</b> <code>{}</code>
 <b>║┃</b>
