@@ -59,14 +59,17 @@ class Translation(object):
 ║╰━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱❁۪۪</b>"""
   
-  STATUS_TXT = """<b>╭──────❪ ʙᴏᴛ sᴛᴀᴛᴜs ❫─────⍟
-│
-├👨 ᴜsᴇʀs  : {}
-│
-├🤖 ʙᴏᴛs : {}
-│
-├📣 ᴄʜᴀɴɴᴇʟ  : {} 
-╰───────────────────⍟</b>
+  STATUS_TXT = """<b>╔════❰ ʙᴏᴛ sᴛᴀᴛᴜs  ❱═❍⊱❁۪۪
+║╭━━━━━━━━━━━━━━━➣
+║┣⪼👱 ᴛᴏᴛᴀʟ ᴜsᴇʀs: {}
+║┃
+║┣⪼🤖 ᴛᴏᴛᴀʟ ʙᴏᴛ: {}
+║┃
+║┣⪼🔃 ғᴏʀᴡᴀʀᴅɪɴɢs: {}
+║┃
+║┣⪼🔍 ᴜɴᴇǫᴜɪꜰʏɪɴɢs: {}
+║╰━━━━━━━━━━━━━━━➣
+╚══════════════════❍⊱❁۪۪</b>
 """
   
   FROM_MSG = "<b>❪ SET SOURCE CHAT ❫\n\nForward the last message or last message link of source chat.\n/cancel - cancel this process</b>"
@@ -111,7 +114,7 @@ class Translation(object):
 <b>║┃</b>
 <b>║┃⪼𖨠 ᴄᴜʀʀᴇɴᴛ sᴛᴀᴛᴜs:</b> <code>{}</code>
 <b>║┃</b>
-<b>║┣⪼𖨠 ᴘᴇʀᴄᴇɴᴛᴀɢᴇ:</b> <code>{}</code>
+<b>║┣⪼𖨠 ᴘᴇʀᴄᴇɴᴛᴀɢᴇ:</b> <code>{}</code> %
 <b>║┃</b>
 <b>║┣⪼𖨠ᴇᴛᴀ:</b> <code>{}</code>
 <b>║╰━━━━━━━━━━━━━━━➣ 
