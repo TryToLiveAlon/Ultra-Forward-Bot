@@ -68,7 +68,7 @@ async def pub_(bot, message):
        return await stop(client, user)
     temp.forwardings += 1
     await db.add_frwd(user)
-    await send(client, user, "🩷 Forwarding Started")
+    await send(client, user, "<b>ғᴏʀᴡᴀʀᴅɪɴɢ sᴛᴀʀᴛᴇᴅ <a href=https://t.me/TryToLiveAlon>🚥</a>🥀</b>")
     sts.add(time=True)
     sleep = 1 if _bot['is_bot'] else 10
     await msg_edit(m, "Processing...") 
