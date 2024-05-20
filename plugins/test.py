@@ -134,7 +134,7 @@ class CLIENT:
      user_id = int(message.from_user.id)
      text = "<b>⚠️ Disclaimer ⚠️</b>\n\nYou Can Use Your Session For Forward Message From Private Chat To Another Chat.\nPlease Add Your Pyrogram Session With Your Own Risk. Their Is A Chance To Ban Your Account. My Developer Is Not Responsible If Your Account May Get Banned."
      await bot.send_message(user_id, text=text)
-     msg = await bot.ask(chat_id=user_id, text="<b>Send your pyrogram session.\nget it from @mdsessiongenbot\n\n/cancel - cancel the process</b>")
+     msg = await bot.ask(chat_id=user_id, text="<b>Send your pyrogram session.\nget it from @StringGenFatherBot - cancel the process</b>")
      if msg.text=='/cancel':
         return await msg.reply('Process Cancelled !')
      elif len(msg.text) < SESSION_STRING_SIZE:
