@@ -73,12 +73,12 @@ async def helpcb(bot, query):
         text=Translation.HELP_TXT,
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton('🛠️ How To Use Me 🛠️', callback_data='how_to_use')
+            InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ❓', callback_data='how_to_use')
             ],[
-            InlineKeyboardButton('⚙️ Settings ⚙️', callback_data='settings#main'),
-            InlineKeyboardButton('📊 Stats 📊', callback_data='status')
+            InlineKeyboardButton('⚙️ sᴇᴛᴛɪɴɢs ', callback_data='settings#main'),
+            InlineKeyboardButton('📜 sᴛᴀᴛᴜs ', callback_data='status')
             ],[
-            InlineKeyboardButton('🔙 Back', callback_data='back')
+            InlineKeyboardButton('↩ ʙᴀᴄᴋ', callback_data='back')
             ]]
         ))
 
