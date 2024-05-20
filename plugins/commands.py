@@ -39,7 +39,7 @@ async def start(client, message):
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id, user.first_name)
     reply_markup = InlineKeyboardMarkup(main_buttons)
-    jishubotz = await message.reply_sticker("CAACAgUAAxkBAAECEEBlLA-nYcsWmsNWgE8-xqIkriCWAgACJwEAAsiUZBTiPWKAkUSmmh4E")
+    jishubotz = await message.reply_sticker("CAACAgEAAxkBAAEMLQ9mSt_K7_M9zPshnOI6pLz6Ysti3wACXQQAAsjRGETv0HseLYp8LR4E")
     await asyncio.sleep(2)
     await jishubotz.delete()
     text=Translation.START_TXT.format(user.mention)
@@ -121,7 +121,7 @@ async def status(bot, query):
     total_channels = await db.total_channels()
     await query.message.edit_text(
         text=Translation.STATUS_TXT.format(users_count, bots_count, temp.forwardings, total_channels, temp.BANNED_USERS ),
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('🔙 Back', callback_data='help')]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(' Back', callback_data='help')]]),
         parse_mode=enums.ParseMode.HTML,
         disable_web_page_preview=True,
     )
