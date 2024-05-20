@@ -214,7 +214,7 @@ async def edit(msg, title, status, sts):
          InlineKeyboardButton('💠 ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 💠', url='https://t.me/deathking_botworld')]
          )
    else:
-      button.append([InlineKeyboardButton('✖️ Cancel ✖️', 'terminate_frwd')])
+      button.append([InlineKeyboardButton('• Cancel', 'terminate_frwd')])
    await msg_edit(msg, text, InlineKeyboardMarkup(button))
    
 async def is_cancelled(client, user, msg, sts):
