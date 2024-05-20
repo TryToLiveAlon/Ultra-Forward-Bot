@@ -97,7 +97,7 @@ class Translation(object):
 <b>║┃</b>
 <b>║┣⪼𖨠ᴇᴛᴀ:</b> <code>{}</code>
 <b>║╰━━━━━━━━━━━━━━━➣ 
-╚════❰ {} ❱══❍⊱❁۪۪</b>
+╚════❰ <a href=https://t.me/TryToLiveAlon>ᴅᴇᴀᴛʜ ᴄᴏᴍᴍᴜɴɪᴛʏ</a> ❱══❍⊱❁۪۪</b>
 """
 
   TEXT1 = """<b>╔════❰ ғᴏʀᴡᴀʀᴅ sᴛᴀᴛᴜs  ❱═❍⊱❁۪۪</b>
@@ -118,7 +118,7 @@ class Translation(object):
 <b>║┃</b>
 <b>║┣⪼𖨠ᴇᴛᴀ:</b> <code>{}</code>
 <b>║╰━━━━━━━━━━━━━━━➣ 
-╚════❰ {} ❱══❍⊱❁۪۪</b>"""
+╚════❰ <a href=https://t.me/TryToLiveAlon>ᴅᴇᴀᴛʜ ᴄᴏᴍᴍᴜɴɪᴛʏ</a> ❱══❍⊱❁۪۪</b>"""
 
   DUPLICATE_TEXT = """╔════❰ ᴜɴᴇǫᴜɪғʏ sᴛᴀᴛᴜs ❱═❍⊱❁۪۪
 ║╭━━━━━━━━━━━━━━━➣
