@@ -196,7 +196,7 @@ async def edit(msg, title, status, sts):
 
     total_files_left = i.total - (i.fetched + i.duplicate + i.filtered + i.skip)
 
-    text = TEXT.format(i.fetched, total_files_left, 4567544,i.duplicate, i.deleted, i.skip, status, percentage, estimated_total_time)
+    text = TEXT.format(i.fetched, total_files_left, 4567544, i.deleted, i.duplicate, i.skip, status, percentage, estimated_total_time)
     if status in ["cancelled", "completed"]:
         button.append(
             [InlineKeyboardButton('💝 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💝', url='https://t.me/deathchatting_world'),
