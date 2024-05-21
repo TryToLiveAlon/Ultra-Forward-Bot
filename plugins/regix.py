@@ -156,13 +156,15 @@ PROGRESS = """
 
 ♻️ ғᴇᴛᴄʜᴇᴅ: {1}
 
-♻️ ғᴏʀᴡᴀʀᴅᴇᴅ: {2}
+♻️ ꜰᴏʀᴡᴀʀᴅᴇᴅ: {2}
 
 ♻️ ʀᴇᴍᴀɪɴɪɴɢ: {3}
 
-♻️ ꜱᴛᴀᴛᴜꜱ: {4}
+♻️ ꜱᴋɪᴘᴘᴇᴅ: {4}
 
-⏳️ ᴇᴛᴀ: {5}
+♻️ ꜱᴛᴀᴛᴜꜱ: {5}
+
+⏳️ ᴇᴛᴀ: {6}
 """
 
 async def msg_edit(msg, text, button=None, wait=None):
@@ -195,8 +197,9 @@ async def edit(msg, title, status, sts):
     estimated_total_time = estimated_total_time if estimated_total_time != '' else '0 s'
 
     total_files_left = i.total - (i.fetched + i.duplicate + i.filtered + i.skip)
+    total_forwarded = i.fetched - i.skip
 
-    text = TEXT.format(i.fetched, total_files_left, i.duplicate, i.deleted, i.skip, status, percentage, estimated_total_time)
+    text = TEXT.format(i.fetched, total_files_left, i.duplicate, i.deleted, i.skip, total_forwarded, status, percentage, estimated_total_time)
     if status in ["cancelled", "completed"]:
         button.append(
             [InlineKeyboardButton('💝 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💝', url='https://t.me/deathchatting_world'),
@@ -294,10 +297,11 @@ async def status_msg(bot, msg):
         remaining = fetched - forwarded 
     est_time = TimeFormatter(milliseconds=est_time)
     est_time = est_time if (est_time != '' or status not in ['completed', 'cancelled']) else '0 s'
-    return await msg.answer(PROGRESS.format(percentage, fetched, forwarded, remaining, status, est_time), show_alert=True)
+    return await msg.answer(PROGRESS.format(percentage, fetched, forwarded, remaining, sts.get('skip'), status, est_time), show_alert=True)
 
 @Client.on_callback_query(filters.regex(r'^close_btn$'))
 async def close(bot, update):
     await update.answer()
     await update.message.delete()
     await update.message.reply_to_message.delete()
+    
