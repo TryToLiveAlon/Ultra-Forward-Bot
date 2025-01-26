@@ -21,12 +21,12 @@ main_buttons = [[
         InlineKeyboardButton('❣️ ᴅᴇᴠᴇʟᴏᴘᴇʀ ❣️', url='https://t.me/TryToLiveAlon')
         ],[
         InlineKeyboardButton('📜 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ', url='https://t.me/deathchatting_world'),
-        InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ  ', url='https://t.me/deathking_botworld')
+        InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ  ', url='https://t.me/deathkingworld')
         ],[
         InlineKeyboardButton('❗ ʜᴇʟᴘ', callback_data='help'),
         InlineKeyboardButton('🎓 ᴀʙᴏᴜᴛ ', callback_data='about')
         ],[
-        InlineKeyboardButton('📡ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ', url='https://t.me/deathmovie_hub')
+        InlineKeyboardButton('📡ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ', url='https://t.me/death_movie')
         ]]
 
 
